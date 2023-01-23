@@ -1,0 +1,14 @@
+package UpStoxUtility;
+
+import java.util.Properties;
+
+public class UtilityNew {
+	
+	// create object of Properties class
+	Properties prop = new Properties();
+	
+	//create object of fileinputStream and pass Property file path
+	
+
+
+}

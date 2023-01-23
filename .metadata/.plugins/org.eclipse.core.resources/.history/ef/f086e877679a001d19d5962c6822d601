@@ -1,0 +1,9 @@
+package neoStoxTestClasses;
+
+import org.testng.annotations.Test;
+
+public class ValidateUserNameNeoStox {
+  @Test
+  public void validatename() {
+  }
+}

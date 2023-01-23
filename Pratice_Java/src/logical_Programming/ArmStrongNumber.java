@@ -1,0 +1,38 @@
+package logical_Programming;
+
+import java.util.Scanner;
+
+public class ArmStrongNumber {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("please enter number :");
+		
+		int a= sc.nextInt();
+		int num=0;
+		int add =0;
+		int b=a;
+		
+		while(a!=0)
+		{
+			num=a%10;
+			add=add+(num*num*num);
+			a=a/10;
+		}
+		
+		System.out.println(+add);
+		if(add==b)
+		{
+			System.out.println("given number is Armstrongnumber");
+		}
+		else
+		{
+			System.out.println("Given number is not Armstrongnumber");
+		}
+		
+
+	}
+
+}

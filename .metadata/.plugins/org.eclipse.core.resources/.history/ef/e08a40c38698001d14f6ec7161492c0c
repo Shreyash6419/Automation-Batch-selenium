@@ -1,0 +1,21 @@
+package upStoxTestClasses;
+
+import org.testng.Reporter;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import upStoxBase.Base;
+
+public class UpstoxUserNameValidation extends Base{
+	
+	@BeforeClass
+	public void OpenBrowser()
+	{
+		launchBrowser();
+		Reporter.log("Launching Browser", true);
+	}
+	
+  @Test
+  public void ValidateUseID() {
+  }
+}

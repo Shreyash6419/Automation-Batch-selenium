@@ -1,0 +1,24 @@
+package UpStoxUtility;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class utilityPropertyFIle {
+	
+     public static void main(String[],args)
+     
+     {
+	
+	// Create object of Properties class.
+	
+	Properties prop = new Properties();
+	
+	// create object of fileinputstream and pass properties file path 
+	
+	FileInputStream myfile = new FileInputStream("C:\\Users\\hp\\eclipse-workspace\\Selenium_work\\MyProperty.properties");
+     }
+	
+	
+}
+
+

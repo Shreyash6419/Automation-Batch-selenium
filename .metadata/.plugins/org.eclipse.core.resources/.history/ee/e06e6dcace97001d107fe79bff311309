@@ -1,0 +1,28 @@
+package ExcelSheetPackage;
+
+import java.io.File;
+
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+public class CommonExcelMethod {
+
+	public void readDataFromExcel  {
+		// TODO Auto-generated method stub
+		
+		
+		File myfile = new File("H:\\selenium\\9julyCexcel.xlsx");
+		
+		Sheet mylocate = WorkbookFactory.create(myfile).getSheet("Sheet3");
+		
+		String un = mylocate.getRow(2).getCell(0).getStringCellValue();
+		
+		String ps = mylocate.getRow(2).getCell(1).getStringCellValue();
+		
+		String pass = mylocate.getRow(2).getCell(2).getStringCellValue();
+		
+		String ExId = mylocate.getRow(2).getCell(3).getStringCellValue();
+
+	}
+
+}

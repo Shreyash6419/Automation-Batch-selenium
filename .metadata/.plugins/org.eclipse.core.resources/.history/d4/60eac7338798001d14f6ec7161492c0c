@@ -1,0 +1,32 @@
+package upStoxTestClasses;
+
+import org.testng.Reporter;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import upStoxBase.Base;
+import upStoxPOMClassesTESTNG.UpstoxFundPageExcel;
+import upStoxPOMClassesTESTNG.UpstoxHomePageExcel;
+import upStoxPOMClassesTESTNG.UpstoxLoginpageExcel;
+import upStoxPOMClassesTESTNG.UpstoxPasscodeExcel;
+import upStoxPOMClassesTESTNG.UpstoxWelComePage;
+
+public class UpstoxUserNameValidation extends Base{
+	
+	UpstoxLoginpageExcel login;
+	UpstoxPasscodeExcel pascode;
+	UpstoxWelComePage welcome;
+	UpstoxHomePageExcel home;
+	UpstoxFundPageExcel funds;
+	
+	@BeforeClass
+	public void OpenBrowser()
+	{
+		launchBrowser();
+		Reporter.log("Launching Browser", true);
+	}
+	
+  @Test
+  public void ValidateUseID() {
+  }
+}

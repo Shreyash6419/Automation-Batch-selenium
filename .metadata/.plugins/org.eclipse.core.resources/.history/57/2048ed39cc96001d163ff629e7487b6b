@@ -1,0 +1,32 @@
+package crossBrowserTesting;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class CBTest2 {
+	@Test
+  
+	WebDriver driver=null;
+	public void BrowserTest(String Bname) 
+	{
+		if(Bname.equals("Chrome"))
+			{
+				System.setProperty("webdriver.chrome.driver","H:\\selenium\\chromedriver_win32\\chromedriver.exe");
+				
+				driver=new ChromeDriver();
+				
+			}
+		else if(Bname.equals("Firfox"))
+		
+		{
+			System.setProperty("webdriver.gecko.driver","H:\\selenium\\chromedriver_win32\\geckodriver.exe");
+			
+			driver=new FirefoxDriver();
+		}
+	  
+		driver.get("https://www.flipkart.com/");
+}
+}

@@ -1,0 +1,30 @@
+package Listners;
+
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+
+public class Listners implements ITestListener 
+
+{
+	@Override
+	public void onTestFailure(ITestResult result) 
+	{
+		Reporter.log("test case failed please have look again", true);
+	
+	}
+	
+	@Override
+	public void onTestSuccess(ITestResult result) {
+	
+		Reporter.log("test case completed successfully", true);
+	}
+	
+	@Override
+	public void onTestSkipped(ITestResult result) 
+	{
+		
+		Reporter.log("test case skipped please retry", true);
+	}
+
+}

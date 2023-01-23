@@ -1,0 +1,11 @@
+package webElement_test;
+
+public class IsSelectedMethod2 {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver","H:\\\\selenium\\\\chromedriver_win32\\\\chromedriver.exe");
+
+	}
+
+}

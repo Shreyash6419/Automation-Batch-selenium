@@ -1,0 +1,11 @@
+package logical_Programming;
+
+public class OddEvenNumbefromrArray 
+{
+	int[] b= {10,20,30,40,50};
+	
+	int f;
+	int e;
+	
+	for(int i=0;i<=b.length)
+}

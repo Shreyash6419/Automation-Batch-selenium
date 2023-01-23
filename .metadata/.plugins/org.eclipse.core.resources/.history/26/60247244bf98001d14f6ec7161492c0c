@@ -1,0 +1,9 @@
+package upStoxTestClasses;
+
+import org.testng.annotations.Test;
+
+public class UpstoxUsernamebypropertyFile {
+  @Test
+  public void f() {
+  }
+}

@@ -1,0 +1,31 @@
+package neoStoxTestClasses;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import NeoStoxPOM.NewStoxHomepage;
+import NeoStoxPOM.NewStoxLoginPage;
+import NeoStoxPOM.Newstoxpasswordpage;
+import upStoxBase.Base_propetyFile;
+
+public class ValidateUserNameNeoStox extends Base_propetyFile {
+	
+	NewStoxLoginPage login;
+	Newstoxpasswordpage password;
+	NewStoxHomepage home;
+
+	
+	@BeforeClass
+	public void LaunchNewstox()
+	{
+		
+	}
+	
+  @Test
+  public void validateusername() throws IOException 
+  {
+	  launchBrowser();
+  }
+}

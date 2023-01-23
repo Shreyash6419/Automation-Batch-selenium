@@ -1,0 +1,9 @@
+package crossBrowserTesting;
+
+import org.testng.annotations.Test;
+
+public class CBTest2 {
+  @Test
+  public void f() {
+  }
+}

@@ -1,0 +1,51 @@
+package WebTable;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import scrolling.ScrollingFuncation;
+
+public class WebTable4 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver","H:\\selenium\\chromedriver_win32\\chromedriver.exe");
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://vctcpune.com/selenium/practice.html");
+		
+		Thread.sleep(1000);
+		
+		driver.manage().window().maximize();
+		
+		WebElement loc1 = driver.findElement(By.xpath("//legend[text()='Web Table Example']"));
+		
+		ScrollingFuncation.scrollintoView(driver, loc1);
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
+		
+		List<WebElement> row1 = driver.findElements(By.xpath("//table[@id='product']//tr"));
+		
+		System.out.println("Total Rows present in Table :"+rows.size());
+		
+		for(WebElement r1:row1)
+		{
+			System.out.println(r1.getText());
+		}
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

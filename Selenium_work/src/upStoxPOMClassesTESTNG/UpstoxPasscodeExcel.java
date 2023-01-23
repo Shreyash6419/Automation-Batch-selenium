@@ -1,0 +1,29 @@
+package upStoxPOMClassesTESTNG;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class UpstoxPasscodeExcel {
+	
+	//variable declearation-- 1st Phase 
+	
+		@FindBy(name="yob") private WebElement Passcode;
+		
+		
+		//Variable initialization(constructor --> Pagefactory class. intinElement method 
+		
+		public UpstoxPasscodeExcel(WebDriver driver)
+		{
+			PageFactory.initElements(driver,this);
+		}
+		
+		//Usage (variable methods --> Actions)
+		
+		public void EnterPassCode(String pass)
+		{
+			Passcode.sendKeys(pass);
+		}
+
+}

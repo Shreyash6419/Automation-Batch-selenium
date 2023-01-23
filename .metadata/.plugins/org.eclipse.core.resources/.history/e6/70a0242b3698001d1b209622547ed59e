@@ -1,0 +1,21 @@
+package UpStoxUtility;
+
+
+public class UtilityNew {
+	
+	//excel input
+	//screenshot
+	//scrolling
+	//wait
+	
+	// keep all method static as it will be better to call in any other class
+	
+	public static String readDataFromExcel() 
+	{
+		
+		
+	}
+	
+
+
+}

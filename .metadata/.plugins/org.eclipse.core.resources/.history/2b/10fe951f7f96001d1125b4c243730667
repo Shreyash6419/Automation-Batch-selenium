@@ -1,0 +1,36 @@
+package varificationUsingTestNG;
+
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+public class SoftAssertStudy {
+	
+	SoftAssert soft = new SoftAssert();
+  @Test
+  public void SoftAssertUse() 
+  {
+	  String a = "ABC";
+	  String b = "XYZ";
+	  
+	  
+	  
+	  soft.assertEquals(a, b,"A and B is not equal TC case fail");
+	  
+	  soft.assertNull(b, "b is not null TC failed");
+	  
+	  
+	  soft.assertAll();
+  }
+  
+  @Test
+  public void SoftAssertpart2() 
+  {
+	  String c = "rsp";
+	  
+	  
+	  soft.assertNull(c, "c is not null TC failed");
+	  
+	  
+	  soft.assertAll();
+  }
+}

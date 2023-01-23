@@ -1,0 +1,26 @@
+package iframeMethod;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class IframeTest6 {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver","H:\\selenium\\chromedriver_win32\\chromedriver.exe");
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://demoqa.com/frames");
+		
+		driver.manage().window().maximize();
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
+		
+		
+
+	}
+
+}

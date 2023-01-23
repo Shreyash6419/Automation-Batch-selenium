@@ -1,0 +1,27 @@
+package logical_Programming;
+
+import java.util.Scanner;
+
+public class ArmStrongNumber {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("please enter number :");
+		
+		double a= sc.nextInt();
+		double num=0;
+		double add =0;
+		
+		while(a!=0)
+		{
+			num=a%10;
+			a=a/10;
+		}
+		
+		add=Math.pow(num,3)	
+
+	}
+
+}

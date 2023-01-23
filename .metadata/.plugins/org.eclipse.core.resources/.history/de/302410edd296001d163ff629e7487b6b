@@ -1,0 +1,9 @@
+package UpstoxPOMUsingExcel;
+
+import org.testng.annotations.Test;
+
+public class Upstoxtest_TestNG {
+  @Test
+  public void f() {
+  }
+}
