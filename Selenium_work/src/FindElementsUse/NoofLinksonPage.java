@@ -22,14 +22,9 @@ public class NoofLinksonPage {
 			//driver.get("https://www.discoveryplus.in/");
 			
 			driver.get("https://www.google.com/");
-			 
 			Thread.sleep(1000);
-			
 			List<WebElement> list1 = driver.findElements(By.tagName("a"));
-			
 			System.out.println(list1.size());
-			
-			
 			for(WebElement w:list1)
 			{
 				System.out.println(w.getText());
